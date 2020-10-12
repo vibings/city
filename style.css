@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #131B21;
+    text-align: center;
+    margin: 0 50px 0 50px;
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+}
+
+.description {
+    color: white;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    /* text-align: justify; */
+    margin: 0 100px 0 100px;
+}
+
+  .container {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .image {
+    perspective: 3000px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+  }
+  .image img {
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+    box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+    transition: all .4s;
+    transform-style: preserve-3d;
+  }
+  .image:hover img {
+    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+  }
+  
